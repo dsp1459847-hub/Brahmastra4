@@ -14,7 +14,7 @@ st.sidebar.header("📁 Data Settings")
 uploaded_file = st.sidebar.file_uploader("Upload CSV/Excel", type=['csv', 'xlsx'])
 shift_names = ["DS", "FD", "GD", "GL", "DB", "SG", "ZA"]
 target_shift_name = st.sidebar.selectbox("🎯 Target Shift", shift_names)
-selected_date = st.sidebar.date_input("Calculation Date")
+selected_end_date = st.sidebar.date_input("Calculation Date")
 max_limit = st.sidebar.slider("Max Repeat Limit", 2, 5, 4)
 
 if uploaded_file is not None:
